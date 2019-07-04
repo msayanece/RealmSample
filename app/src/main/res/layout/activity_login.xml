@@ -8,7 +8,7 @@
     tools:context=".complex.loginrelated.LoginActivity"
     >
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -27,7 +27,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailTextInputLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,14 +38,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginTitleTextView">
 
-            <android.support.design.widget.TextInputEditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordTextInputLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -56,11 +56,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout">
 
-            <android.support.design.widget.TextInputEditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/loginButton"
@@ -71,6 +72,7 @@
             android:layout_marginEnd="24dp"
             android:shadowColor="#80CBC4"
             android:text="Login"
+            android:onClick="onClickLogin"
             android:textColor="#570A64"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,6 +85,7 @@
             android:layout_marginStart="2dp"
             android:layout_marginTop="16dp"
             android:text="Don't have an account? Register"
+            android:onClick="onClickRegister"
             app:layout_constrainedWidth="true"
             app:layout_constraintEnd_toStartOf="@+id/forgotPassword"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -96,6 +99,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="2dp"
             android:text="Forgot password?"
+            android:onClick="onClickForgotPassword"
             app:layout_constrainedWidth="true"
             app:layout_constraintEnd_toEndOf="@+id/loginButton"
             app:layout_constraintStart_toEndOf="@+id/registerTextView"
@@ -113,5 +117,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginTitleTextView"
             tools:visibility="gone" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

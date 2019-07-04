@@ -2,7 +2,7 @@ package com.sayan.sample.realmsample.complex
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.sayan.sample.realmsample.R
 import com.sayan.sample.realmsample.complex.loginrelated.LoginActivity
 
