@@ -1,10 +1,11 @@
-package com.sayan.sample.realmsample;
+package com.sayan.sample.realmsample.simple;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.sayan.sample.realmsample.R;
+
 import java.util.Random;
-import java.util.UUID;
 
 import io.realm.OrderedCollectionChangeSet;
 import io.realm.OrderedRealmCollectionChangeListener;

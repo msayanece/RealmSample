@@ -1,4 +1,4 @@
-package com.sayan.sample.realmsample;
+package com.sayan.sample.realmsample.simple;
 
 import io.realm.RealmObject;
 
